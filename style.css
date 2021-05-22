@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  /* background: #121212; */
+  color: lightgreen;
+}
+
+body {
+  background: #121212;
+}
+
+section {
+  min-height: 10vh;
+}
+
+.rootContent {
+  background-image: url(assets/out.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 100vh;
+
+  width: 100%;
+}
+
+.contentBox {
+  padding-left: 16%;
+  padding-right: 16%;
+  padding-top: 20vh;
+}
+
+nav {
+  margin-left: 16%;
+  margin-right: 16%;
+  padding-top: 38px;
+  vertical-align: middle;
+}
+
+.navItem {
+  display: inline;
+  /* padding-top: 20vw; */
+  float: right;
+  position: relative;
+  top: 1.3vw;
+}
+
+.navLink {
+  /* display: block; */
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: white;
+}
+
+#websiteName {
+  float: left;
+  font-size: min(52px, 4vw);
+  top: 0;
+}
+
+.intro-text {
+  display: inline-block;
+  background: lightgreen;
+  font-size: 3vh;
+  margin-right: 22px;
+  padding: 10px;
+  color: #121212;
+}
+
+.intro-container {
+  margin: 34px 0px;
+}
+
+.tagline {
+  font-family: "Nunito";
+  font-style: italic;
+  margin-bottom: 10vh;
+}
+
+.details-para {
+  max-width: 600px;
+}
+
+.details {
+  font-size: clamp(16px, 2.5vw, 22px);
+}
+
+.menu-button-icon {
+  display: none;
+  max-width: 20px;
+  filter: opacity(0.5) drop-shadow(0 0 0 lightgreen);
+}
+
+@media screen and (max-width: 700px) {
+  .contentBox {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .large-intro {
+    display: none;
+  }
+  .small-intro {
+    display: block;
+  }
+  nav {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  nav li:not(:first-child) {
+    display: none;
+  }
+
+  #websiteName {
+    font-size: 6vh;
+    text-align: center;
+    float: none;
+  }
+
+  #websiteName a {
+    display: block;
+    text-align: center;
+  }
+  .navItem {
+    float: none;
+  }
+
+  .contentBox {
+    padding-top: 20px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .small-intro {
+    display: none;
+  }
+  .large-intro {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
