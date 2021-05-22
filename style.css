@@ -16,7 +16,7 @@ section {
 }
 
 .rootContent {
-  background-image: url(assets/out.jpg);
+  background-image: url(assets/cover.png);
   background-repeat: no-repeat;
   background-position: right;
   min-height: 100vh;
